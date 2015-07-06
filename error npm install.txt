@@ -1,0 +1,24 @@
+sergio@sergio-ThinkPad-R51:~/MOOC/apps/quiz$ npm install
+npm ERR! Linux 3.2.0-86-generic
+npm ERR! argv "node" "/usr/bin/npm" "install"
+npm ERR! node v0.10.37
+npm ERR! npm  v2.12.1
+npm ERR! path /home/sergio/.npm/express/4.9.8
+npm ERR! code EACCES
+npm ERR! errno 3
+
+npm ERR! Error: EACCES, mkdir '/home/sergio/.npm/express/4.9.8'
+npm ERR!  { [Error: EACCES, mkdir '/home/sergio/.npm/express/4.9.8']
+npm ERR!   errno: 3,
+npm ERR!   code: 'EACCES',
+npm ERR!   path: '/home/sergio/.npm/express/4.9.8',
+npm ERR!   parent: 'quiz' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/sergio/MOOC/apps/quiz/npm-debug.log
+sergio@sergio-ThinkPad-R51:~/MOOC/apps/quiz$ ls
+app.js  bin  npm-debug.log  package.json  public  routes  views
+sergio@sergio-ThinkPad-R51:~/MOOC/apps/quiz$ 
+
