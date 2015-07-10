@@ -1,96 +1,36 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/usr/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '--save',
-1 verbose cli   'express-partiaials@0.3.0' ]
+1 verbose cli [ 'node', '/usr/bin/npm', 'start' ]
 2 info using npm@2.12.1
 3 info using node@v0.10.37
 4 verbose node symlink /usr/bin/node
-5 verbose install initial load of /home/sergio/MOOC/apps/quiz/package.json
-6 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/body-parser/package.json
-7 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/cookie-parser/package.json
-8 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/debug/package.json
-9 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/ejs/package.json
-10 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/express/package.json
-11 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/morgan/package.json
-12 verbose installManyTop reading scoped package data from /home/sergio/MOOC/apps/quiz/node_modules/serve-favicon/package.json
-13 info package.json debug@2.0.0 No license field.
-14 info package.json ejs@0.8.8 No license field.
-15 verbose readDependencies loading dependencies from /home/sergio/MOOC/apps/quiz/package.json
-16 silly cache add args [ 'express-partiaials@0.3.0', null ]
-17 verbose cache add spec express-partiaials@0.3.0
-18 silly cache add parsed spec { raw: 'express-partiaials@0.3.0',
-18 silly cache add   scope: null,
-18 silly cache add   name: 'express-partiaials',
-18 silly cache add   rawSpec: '0.3.0',
-18 silly cache add   spec: '0.3.0',
-18 silly cache add   type: 'version' }
-19 silly addNamed express-partiaials@0.3.0
-20 verbose addNamed "0.3.0" is a plain semver version for express-partiaials
-21 silly mapToRegistry name express-partiaials
-22 silly mapToRegistry using default registry
-23 silly mapToRegistry registry https://registry.npmjs.org/
-24 silly mapToRegistry uri https://registry.npmjs.org/express-partiaials
-25 verbose addNameVersion registry:https://registry.npmjs.org/express-partiaials not in flight; fetching
-26 verbose request uri https://registry.npmjs.org/express-partiaials
-27 verbose request no auth needed
-28 info attempt registry request try #1 at 00:26:02
-29 verbose request id 75538455d82368a8
-30 http request GET https://registry.npmjs.org/express-partiaials
-31 http 404 https://registry.npmjs.org/express-partiaials
-32 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-32 verbose headers   'content-type': 'application/json',
-32 verbose headers   'cache-control': 'max-age=0',
-32 verbose headers   'content-length': '51',
-32 verbose headers   'accept-ranges': 'bytes',
-32 verbose headers   date: 'Mon, 06 Jul 2015 03:26:03 GMT',
-32 verbose headers   via: '1.1 varnish',
-32 verbose headers   age: '0',
-32 verbose headers   connection: 'keep-alive',
-32 verbose headers   'x-served-by': 'cache-jfk1032-JFK',
-32 verbose headers   'x-cache': 'MISS',
-32 verbose headers   'x-cache-hits': '0',
-32 verbose headers   'x-timer': 'S1436153163.747502,VS0,VE94' }
-33 silly get cb [ 404,
-33 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-33 silly get     'content-type': 'application/json',
-33 silly get     'cache-control': 'max-age=0',
-33 silly get     'content-length': '51',
-33 silly get     'accept-ranges': 'bytes',
-33 silly get     date: 'Mon, 06 Jul 2015 03:26:03 GMT',
-33 silly get     via: '1.1 varnish',
-33 silly get     age: '0',
-33 silly get     connection: 'keep-alive',
-33 silly get     'x-served-by': 'cache-jfk1032-JFK',
-33 silly get     'x-cache': 'MISS',
-33 silly get     'x-cache-hits': '0',
-33 silly get     'x-timer': 'S1436153163.747502,VS0,VE94' } ]
-34 verbose stack Error: 404 Not Found: express-partiaials
-34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
-34 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
-34 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:197:22)
-34 verbose stack     at Request.emit (events.js:98:17)
-34 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1050:14)
-34 verbose stack     at Request.emit (events.js:117:20)
-34 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:996:12)
-34 verbose stack     at IncomingMessage.emit (events.js:117:20)
-34 verbose stack     at _stream_readable.js:944:16
-34 verbose stack     at process._tickCallback (node.js:448:13)
-35 verbose statusCode 404
-36 verbose pkgid express-partiaials
-37 verbose cwd /home/sergio/MOOC/apps/quiz
-38 error Linux 3.2.0-86-generic
-39 error argv "node" "/usr/bin/npm" "install" "--save" "express-partiaials@0.3.0"
-40 error node v0.10.37
-41 error npm  v2.12.1
-42 error code E404
-43 error 404 Not Found: express-partiaials
-43 error 404
-43 error 404 'express-partiaials' is not in the npm registry.
-43 error 404 You should bug the author to publish it (or use the name yourself!)
-43 error 404 It was specified as a dependency of 'quiz'
-43 error 404
-43 error 404 Note that you can also install from a
-43 error 404 tarball, folder, http url, or git url.
-44 verbose exit [ 1, true ]
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart quiz@0.0.0
+7 info start quiz@0.0.0
+8 verbose unsafe-perm in lifecycle true
+9 info quiz@0.0.0 Failed to exec start script
+10 verbose stack Error: quiz@0.0.0 start: `node ./bin/www`
+10 verbose stack Exit status 8
+10 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+10 verbose stack     at EventEmitter.emit (events.js:98:17)
+10 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+10 verbose stack     at ChildProcess.emit (events.js:98:17)
+10 verbose stack     at maybeClose (child_process.js:766:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
+11 verbose pkgid quiz@0.0.0
+12 verbose cwd /home/sergio/MOOC/apps/quiz
+13 error Linux 3.2.0-86-generic
+14 error argv "node" "/usr/bin/npm" "start"
+15 error node v0.10.37
+16 error npm  v2.12.1
+17 error code ELIFECYCLE
+18 error quiz@0.0.0 start: `node ./bin/www`
+18 error Exit status 8
+19 error Failed at the quiz@0.0.0 start script 'node ./bin/www'.
+19 error This is most likely a problem with the quiz package,
+19 error not with npm itself.
+19 error Tell the author that this fails on your system:
+19 error     node ./bin/www
+19 error You can get their info via:
+19 error     npm owner ls quiz
+19 error There is likely additional logging output above.
+20 verbose exit [ 1, true ]
