@@ -1,4 +1,4 @@
-body 			{ background: #999; }
+body 			{ background: #b99; }
 
 #page-wrap:after	{ content: "Wide Layout"; }
 
