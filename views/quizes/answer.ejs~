@@ -1,5 +1,5 @@
-   <body>
-      <%= respuesta %> <p>
-      <a href="/quizes/question"> Inténtelo otra vez </a>
-   </body>
+<p>
+   <%= respuesta %> <p>
+   <a href="/quizes/<%= quiz.id %>"> Volver </a>
+</p>
 
