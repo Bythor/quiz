@@ -18,7 +18,7 @@
 10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
 11 verbose pkgid quiz@0.0.0
 12 verbose cwd /home/sergio/MOOC/apps/quiz
-13 error Linux 3.2.0-86-generic
+13 error Linux 3.2.0-88-generic
 14 error argv "node" "/usr/bin/npm" "start"
 15 error node v0.10.37
 16 error npm  v2.12.1

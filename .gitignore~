@@ -1,8 +1,8 @@
 .DS_Store
-node_modules
+
 npm-debug.log
-old_style.css
 error npm install.txt
+.env
 *.*~
 *~
 
