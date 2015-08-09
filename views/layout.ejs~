@@ -17,6 +17,12 @@
    <body>
    <div id="page-wrap">
       <header class="main" id="h1">
+      <%if (!session.user) {%>
+      <span class="right"><a href="/login">Login</a></span>
+      <%} else {%>
+      <span class="right"> <%=session.user.username%> <a href="/logout">Logout</a></span>
+      <%}%>
+      
 	 <h2>Quiz<span>: el juego de las preguntas</span></h2>
       </header>
 
@@ -27,13 +33,22 @@
       </nav>	
 
       <section class="main" id="s1">
-      <div><%- body %></div>
+	<% if (errors.length) { %>
+	  <span id='ErrorMsgs'>
+	    Corregir errores:</br>
+	    <% for (var i in errors) { %>
+		<span> <%= errors[i].message %> </span></br>
+	    <% } %>
+	  </span>
+	<% } %>	
+
+        <div><%- body %></div>
       </section>
 
       <footer class="main" id="f1">
 	<p> <a href="http://es.wikipedia.org/wiki/Quiz">
 	   ¿Qué es un Quiz? </a></p>
-	<p>Proyecto disponible en <a href="https://github.com/Bythor/quiz"> Github </a></p>
+	<p>Proyecto disponible en  <a href="https://github.com/Bythor/quiz"> Github </a></p>
       </footer>
    </div>
    </body>
