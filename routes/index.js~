@@ -13,9 +13,9 @@ router.get('/', function(req, res) {
 router.param('quizId', quizController.load);  // autoload :quizId
 
 // Definición de rutas de sesión
-router.get('/login', sessionController.new);		// formulario login
-router.post('/login', sessionController.create);	// crear sesión
-router.get('/logout', sessionController.destroy);	// destruir sesión
+router.get( '/login',  sessionController.new);		// formulario login
+router.post('/login',  sessionController.create);	// crear sesión
+router.get( '/logout', sessionController.destroy);	// destruir sesión
 
 // Definición de rutas de /quizes
 router.get('/quizes', quizController.index);
