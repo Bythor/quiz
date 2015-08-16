@@ -39,6 +39,19 @@ app.use(function(req, res, next) {
     next();    
 });
 
+// AutoLogout - Limitador de sesión
+app.use(function(req, res, next) {
+	if (req.session.user) { //10 segundos para agilizar las pruebas
+		if (new Date().getTime() - req.session.user.lastReqTime > 1*10*1000) { 
+			delete req.session.user;
+		} else {
+			req.session.user.lastReqTime = new Date().getTime();
+		}
+	}
+	next();
+});
+
+
 app.use('/', routes);
 
 // catch 404 and forward to error handler
