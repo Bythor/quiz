@@ -41,10 +41,9 @@ app.use(function(req, res, next) {
 
 // AutoLogout - Limitador de sesión
 app.use(function(req, res, next) {
-	if (req.session.user) { //10 segundos para agilizar las pruebas
-		if (new Date().getTime() - req.session.user.lastReqTime > 1*10*1000) { 
+	if (req.session.user) { // se fijó en 1 minuto para agilizar las pruebas
+		if (new Date().getTime() - req.session.user.lastReqTime > 1*20*1000) { 
 			delete req.session.user;
-			res.render('sessions/timeout', {}); res.redirect("/login")
 		} else {
 			req.session.user.lastReqTime = new Date().getTime();
 		}
