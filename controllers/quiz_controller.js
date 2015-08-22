@@ -67,6 +67,7 @@ exports.author = function(req,res) {
 
 // POST /quizes/create
 exports.create = function(req,res) {
+   req.body.quiz.UserId = req.session.user.id;  // agregado según Quiz 20
    var quiz = models.Quiz.build( req.body.quiz );
 
    quiz
@@ -77,7 +78,7 @@ exports.create = function(req,res) {
 	    res.render('quizes/new', {quiz: quiz, errors: err.errors});
 	 } else {  
            quiz  // guarda en DB los campos pregunta y respuesta de quiz
-	   .save({fields: ["pregunta", "respuesta", "tema"]})
+	   .save({fields: ["pregunta", "respuesta", "tema", "UserId"]})
 	   .then( function() { res.redirect('/quizes')})
 	   }  // Redirección HTTP (URL relativo) Lista de preguntas
       }    
